@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/customToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#FFFDD0"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/value"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:hint="@string/value"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/units"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="viewEnd"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:text="Convert"/>
+        <TextView
+            android:id="@+id/inch"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:textAlignment="viewEnd"
+            android:background="#D3AEAE"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ft"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:layout_margin="4dp"
+            android:background="#E9D1ED"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/yd"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:textAlignment="viewEnd"
+            android:background="#D3AEAE"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/m"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:background="#E9D1ED"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dm"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#D3AEAE"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/cm"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#E9D1ED"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/mm"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#D3AEAE"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/μm"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#E9D1ED"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/km"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#D3AEAE"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/mile"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:background="#E9D1ED"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
